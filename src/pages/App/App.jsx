@@ -3,7 +3,6 @@ import { Routes, Route } from 'react-router-dom';
 import { getUser } from '../../utilities/users-service';
 import './App.css';
 import AuthPage from '../AuthPage/AuthPage';
-import Homepage from '../Homepage/Homepage';
 import NewOrderPage from '../NewOrderPage/NewOrderPage';
 import OrderHistoryPage from '../OrderHistoryPage/OrderHistoryPage';
 import NavBar from '../../components/NavBar/NavBar';
@@ -19,10 +18,9 @@ export default function App() {
             <NavBar user={user} setUser={setUser} />
             <Routes>
               {/* Route components in here */}
-              <Route path="/" element={<Homepage />} /> {/* render Homepage at the root */}
+              <Route path="/" element={<BookList />} /> {/* render Homepage at the root */}
               <Route path="/orders/new" element={<NewOrderPage />} />
               <Route path="/orders" element={<OrderHistoryPage />} />
-              <Route path="/books" element={<BookList />} /> {/* Add a route for BookForm */}
             </Routes>
           </>
         ) : (
