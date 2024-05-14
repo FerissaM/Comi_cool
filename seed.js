@@ -14,7 +14,7 @@ const Book = require('./models/book');
       description: 'Natsu!',
       genre: 'Shonen',
       price: 10.99,
-      volume: 1
+      series: { name: 'Fairy Tail', volume: 1 }
     },
     { 
       title: 'Dragon Ball',
@@ -22,7 +22,7 @@ const Book = require('./models/book');
       description: 'Kamehame ha!',
       genre: 'Shojou',
       price: 11.99,
-      volume: 2
+      series: { name: 'Dragon Ball', volume: 2 }
     },
     // just a sample, will edit later
   ]);

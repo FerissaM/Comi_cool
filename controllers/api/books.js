@@ -23,42 +23,7 @@ async function getBookById(req, res) {
   }
 }
 
-async function createBook(req, res) {
-  try {
-    const book = await Book.create(req.body);
-    res.status(201).json(book);
-  } catch (err) {
-    console.error(err);
-    res.status(500).json({ message: 'Server Error' });
-  }
-}
-
-async function updateBook(req, res) {
-  try {
-    const { id } = req.params;
-    const updatedBook = await Book.findByIdAndUpdate(id, req.body, { new: true });
-    res.json(updatedBook);
-  } catch (err) {
-    console.error(err);
-    res.status(500).json({ message: 'Server Error' });
-  }
-}
-
-async function deleteBook(req, res) {
-  try {
-    const { id } = req.params;
-    await Book.findByIdAndDelete(id);
-    res.status(204).end();
-  } catch (err) {
-    console.error(err);
-    res.status(500).json({ message: 'Server Error' });
-  }
-}
-
 module.exports = {
   getAllBooks,
-  getBookById,
-  createBook,
-  updateBook,
-  deleteBook
+  getBookById
 };
