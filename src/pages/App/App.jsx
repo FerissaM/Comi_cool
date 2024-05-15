@@ -7,6 +7,7 @@ import NewOrderPage from '../NewOrderPage/NewOrderPage';
 import OrderHistoryPage from '../OrderHistoryPage/OrderHistoryPage';
 import NavBar from '../../components/NavBar/NavBar';
 import BookList from '../../components/BookList/BookList'; 
+import BookDetails from '../../components/BookDetails/BookDetails';
 
 export default function App() {
   const [user, setUser] = useState(getUser());
@@ -19,6 +20,7 @@ export default function App() {
             <Routes>
               {/* Route components in here */}
               <Route path="/" element={<BookList />} /> {/* render Homepage at the root */}
+              <Route path="/books/:id" element={<BookDetails />} /> {/* render BookDetails for specific book */}
               <Route path="/orders/new" element={<NewOrderPage />} />
               <Route path="/orders" element={<OrderHistoryPage />} />
             </Routes>
