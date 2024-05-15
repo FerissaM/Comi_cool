@@ -8,3 +8,8 @@ export async function getAll () {
 export function getById(id) {
     return sendRequest(`${BASE_URL}/${id}`);
 }
+
+export async function addBookToCart(bookId) {
+    const response = await sendRequest(`${BASE_URL}/cart`, 'POST', { bookId });
+    return response;
+}

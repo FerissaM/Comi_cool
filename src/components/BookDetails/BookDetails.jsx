@@ -19,10 +19,14 @@ function BookDetails() {
         }
       }
 
-    function handleBuyClick() {
-        // For now, just log the purchase action
-        console.log(`Purchased book: ${book.title}`);
-      }
+    async function handleBuyClick() {
+        try {
+            await booksApi.addBookToCart(id);
+            alert(`Added ${book.title} to your cart`);
+        } catch (error) {
+            console.error('Error adding book to cart:', error);
+        }
+    }
     
   if (!book) {
     return <div>Loading...</div>;
