@@ -1,9 +1,9 @@
 import React from 'react';
 import LineItem from '../LineItem/LineItem';
 
-export default function OrderDetails({ order, handleChangeQty, handleCheckout }) {
+function OrderDetails({ order, handleChangeQty, handleCheckout }) {
   if (!order) return null;
-
+  console.log(order)
   const lineItems = order.lineItems.map(item => (
     <LineItem
       key={item._id}
@@ -44,9 +44,11 @@ export default function OrderDetails({ order, handleChangeQty, handleCheckout })
             </section>
           </>
         ) : (
-          <div className="hungry">Hungry?</div>
+          <div className="more">want more books?</div>
         )}
       </div>
     </div>
   );
 }
+
+export default OrderDetails;

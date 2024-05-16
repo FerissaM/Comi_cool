@@ -1,19 +1,45 @@
-import React from 'react'; // Don't forget to import React if you're using JSX
+import React, { useState, useEffect } from 'react';
 import './Cart.css';
 import Logo from '../../components/Logo/Logo';
 import UserLogOut from '../../components/UserLogOut/UserLogOut';
-import OrderDetail from '../../components/OrderDetails/OrderDetails';
+import OrderDetails from '../../components/OrderDetails/OrderDetails';
+import { getCart } from '../../utilities/orders-api';
 
-export default function Cart() {
+function Cart() {
+  const [order, setOrder] = useState(null);
+
+  useEffect(() => {
+    const fetchCart = async () => {
+      try {
+        const cartData = await getCart();
+        setOrder(cartData);
+      } catch (error) {
+        console.error('Error fetching cart:', error);
+      }
+    };
+  
+    fetchCart();
+  }, []);
+
+  const handleChangeQty = (itemId, newQty) => {
+    // to be edited if needed later
+  };
+
+  const handleCheckout = () => {
+    // edit later
+  };
+
   return (
     <main className="Cart">
-      <header className="header">
-        <Logo />
-        <UserLogOut />
-      </header>
       <section className="order-details">
-        <OrderDetail />
-      </section>
+        <OrderDetails 
+          order={order}
+          handleChangeQty={handleChangeQty}
+          handleCheckout={handleCheckout}
+        />
+      </section> 
     </main>
   );
 }
+
+export default Cart;

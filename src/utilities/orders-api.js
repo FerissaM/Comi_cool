@@ -7,6 +7,6 @@ export function getCart() {
   return sendRequest(`${BASE_URL}/cart`);
 }
 
-export function addItemToCart(itemId) {
+export function addItem(itemId) {
   return sendRequest(`${BASE_URL}/cart/items/${itemId}`, 'POST');
 }

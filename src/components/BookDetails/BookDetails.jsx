@@ -22,7 +22,6 @@ function BookDetails({ handleBuy }) {
 
     function handleBuyClick() {
         handleBuy(id);  // Call handleBuy with the book id
-        alert(`Added ${book.title} to your cart`);
     }
     
   if (!book) {

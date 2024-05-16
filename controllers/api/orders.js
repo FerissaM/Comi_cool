@@ -29,6 +29,8 @@ async function cart(req, res) {
 async function addToCart(req, res) {
   try {
     const cart = await Order.getCart(req.user._id);
+    console.log('cart', cart)
+    console.log(req.params.id)
     await cart.addItemToCart(req.params.id);
     res.json(cart);
   } catch (error) {

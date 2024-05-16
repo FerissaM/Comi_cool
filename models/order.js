@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
-const itemSchema = require('./itemSchema');
+const bookSchema = require('./bookSchema');
 
 const lineItemSchema = new Schema({
   qty: { type: Number, default: 1 },
-  item: itemSchema
+  item: bookSchema
 }, {
   timestamps: true,
   toJSON: { virtuals: true }
@@ -48,14 +48,23 @@ orderSchema.statics.getCart = function(userId) {
 };
 
 orderSchema.methods.addItemToCart = async function(itemId) {
+  console.log('bookId', itemId)
   const cart = this;
-  const lineItem = cart.lineItems.find(lineItem => lineItem.item._id.equals(itemId));
+  console.log(cart)
+  console.log('wtf')
+  const lineItem = cart.lineItems.find(line => line.item._id.equals(itemId));
+  // const lineItem = itemId
+  console.log('lineItem', lineItem)
   if (lineItem) {
+    console.log('bye')
     lineItem.qty += 1;
   } else {
-    const Item = mongoose.model('Item');
-    const item = await Item.findById(itemId);
-    cart.lineItems.push({ item });
+    console.log('hi')
+    const Book = mongoose.model('Book');
+    const book = await Book.findById(itemId);
+    console.log(book)
+    cart.lineItems.push({ item: book });
+    console.log(cart)
   }
   return cart.save();
 };
