@@ -1,31 +1,28 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import { useParams } from 'react-router-dom';
 import * as booksApi from '../../utilities/books-api';
 
-function BookDetails() {
+function BookDetails({ handleBuy }) {
     const { id } = useParams();
     const [book, setBook] = useState(null);
-  
-    useEffect(() => {
-      fetchBookDetails();
-    }, [id]);
 
-    async function fetchBookDetails() {
+    const fetchBookDetails = useCallback(async () => {
         try {
           const fetchedBook = await booksApi.getById(id);
           setBook(fetchedBook);
         } catch (error) {
           console.error('Error fetching book details:', error);
         }
-      }
+    }, [id]);
 
-    async function handleBuyClick() {
-        try {
-            await booksApi.addBookToCart(id);
-            alert(`Added ${book.title} to your cart`);
-        } catch (error) {
-            console.error('Error adding book to cart:', error);
-        }
+    useEffect(() => {
+      fetchBookDetails();
+    }, [fetchBookDetails]);
+
+
+    function handleBuyClick() {
+        handleBuy(id);  // Call handleBuy with the book id
+        alert(`Added ${book.title} to your cart`);
     }
     
   if (!book) {
@@ -35,7 +32,7 @@ function BookDetails() {
   return (
     <div>
       <h1>{book.title}</h1>
-      <img src={book.imageUrl} style={{ width: '200px' }} />
+      <img src={book.imageUrl} style={{ width: '200px' }} alt={`${book.title} cover`}/>
       <p><strong>Author:</strong> {book.author}</p>
       <p><strong>Description:</strong> {book.description}</p>
       <p><strong>Genre:</strong> {book.genre}</p>

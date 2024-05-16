@@ -30,11 +30,12 @@ export default function App() {
             <Routes>
               {/* Route components in here */}
               <Route path="/" element={<BookList />} /> {/* render Homepage at the root */}
-              <Route path="/books/:id" element={<BookDetails />} /> {/* render BookDetails for specific book */}
+              <Route path="/books/:id" element={<BookDetails handleBuy={handleBuy} />} /> {/* render BookDetails for specific book */}
               <Route path="/orders/new" element={<Cart />} />
               <Route path="/orders" element={<OrderHistoryPage />} />
               <Route path="/order-details" element={<OrderDetails />} />
               <Route path="/line-item" element={<LineItem />} />
+              <Route path="/cart" element={<Cart />} />
             </Routes>
           </>
         ) : (

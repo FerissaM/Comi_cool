@@ -4,7 +4,6 @@ const itemsCtrl = require('../../controllers/api/items');
 
 // get to retrieve all items
 router.get('/', itemsCtrl.index);
-
 // get to retrieve a single item by ID
 router.get('/:id', itemsCtrl.show);
 

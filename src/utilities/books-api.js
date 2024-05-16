@@ -9,7 +9,6 @@ export function getById(id) {
     return sendRequest(`${BASE_URL}/${id}`);
 }
 
-export async function addBookToCart(bookId) {
-    const response = await sendRequest(`api/cart`, 'POST', { bookId });
-    return response;
-}
+export async function addItemToCart(bookId) {
+    return sendRequest(`/api/orders/cart/items/${bookId}`, 'POST');
+  }
