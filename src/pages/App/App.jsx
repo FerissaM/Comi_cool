@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { getUser } from '../../utilities/users-service';
 import './App.css';
@@ -14,19 +14,19 @@ import * as ordersApi from '../../utilities/orders-api';
 
 export default function App() {
   const [user, setUser] = useState(getUser());
-  const [cart, setCart] = useState([]);
+  // const [setCart] = useState([]);
 
   // useEffect(()=> {
   //   async function cart() {
   //     const cart = await ordersApi.getCart();
   //     setCart(cart);
   //   } 
-  //   cart()
+  //   fetchcart()
   // }, [])
 
   async function handleBuy(bookId) {
     const updatedCart = await ordersApi.addItem(bookId);
-    setCart(updatedCart);
+    // setCart(updatedCart);
   }
 
   // eslint-disable-next-line
@@ -40,7 +40,7 @@ export default function App() {
               <Route path="/" element={<BookList />} /> {/* render Homepage at the root */}
               <Route path="/books/:id" element={<BookDetails handleBuy={handleBuy} />} /> {/* render BookDetails for specific book */}
               {/* <Route path="/orders/new" element={<Cart cart = {cart} />} /> */}
-              <Route path="/orders" element={<OrderHistoryPage />} />
+              <Route path="/orders" element={<OrderHistoryPage user={user} setUser={setUser}/>} />
               <Route path="/order-details" element={<OrderDetails />} />
               <Route path="/line-item" element={<LineItem />} />
               <Route path="/cart" element={<Cart />} />

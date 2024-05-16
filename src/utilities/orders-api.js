@@ -10,3 +10,15 @@ export function getCart() {
 export function addItem(itemId) {
   return sendRequest(`${BASE_URL}/cart/items/${itemId}`, 'POST');
 }
+
+export function getOrders() {
+    return sendRequest(`${BASE_URL}`);
+}
+
+export function checkout() {
+    return sendRequest(`${BASE_URL}/cart/checkout`, 'POST');
+}
+
+export function setItemQty(itemId, newQty) {
+    return sendRequest(`${BASE_URL}/cart/qty`, 'PUT', {itemId, newQty});
+}

@@ -1,0 +1,14 @@
+.OrderList {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .order-item {
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .order-item:hover {
+    background-color: #f0f0f0;
+  }

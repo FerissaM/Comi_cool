@@ -11,6 +11,7 @@ const lineItemSchema = new Schema({
 });
 
 lineItemSchema.virtual('extPrice').get(function() {
+  console.log(this.item.price)
   return this.qty * this.item.price;
 });
 
@@ -71,11 +72,18 @@ orderSchema.methods.addItemToCart = async function(itemId) {
 
 orderSchema.methods.setItemQty = function(itemId, newQty) {
   const cart = this;
-  const lineItem = cart.lineItems.find(lineItem => lineItem.item._id.equals(itemId));
-  if (lineItem && newQty <= 0) {
-    lineItem.deleteOne();
-  } else if (lineItem) {
-    lineItem.qty = newQty;
+  const l = cart.lineItems.find(lineItem => lineItem.item._id.equals(itemId));
+  if (l && newQty <= 0) {
+    console.log('hi')
+    console.log(l)
+    try {
+      // l.deleteOne();
+      cart.lineItems.remove(l)
+    } catch (err) {
+      console.log(err)
+    }
+  } else if (l) {
+    l.qty = newQty;
   }
   return cart.save();
 };

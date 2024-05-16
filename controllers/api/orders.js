@@ -1,14 +1,14 @@
 const Order = require('../../models/order');
 
 module.exports = {
-  getAllForUser,
+  getAllOrders,
   cart,
   addToCart,
   setItemQtyInCart,
   checkout
 };
 
-async function getAllForUser(req, res) {
+async function getAllOrders(req, res) {
   try {
     const orders = await Order.find({ user: req.user._id, isPaid: true }).sort('-updatedAt');
     res.json(orders);
@@ -41,7 +41,7 @@ async function addToCart(req, res) {
 async function setItemQtyInCart(req, res) {
   try {
     const cart = await Order.getCart(req.user._id);
-    await cart.setItemQty(req.params.id, req.body.newQty);
+    await cart.setItemQty(req.body.itemId, req.body.newQty);
     res.json(cart);
   } catch (error) {
     res.status(500).json({ error: 'Internal server error' });
