@@ -31,7 +31,7 @@ function BookDetails({ handleBuy }) {
 
   return (
     <div className="book-details-container">
-         <img src={book.imageUrl} style={{ width: '200px' }} alt={``}/>
+         <img src={book.imageUrl} style={{ width: '300px' }} alt={``}/>
     <div className="book-details-text">  
       <h1>{book.title}</h1>
       <p><strong>Author:</strong> {book.author}</p>
