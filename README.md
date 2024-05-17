@@ -3,11 +3,11 @@
 An online bookstore specializing on Japanese comic books! You can now browse and buy any manga, any volume you want!
 
 # Screenshots
-<img src="https://i.imgur.com/QF96yoj.png" title="source: imgur.com" />
-<img src="https://i.imgur.com/HjKnsbx.png" title="source: imgur.com" />
-<img src="https://i.imgur.com/RsEVI8Y.png" title="source: imgur.com" />
-<img src="https://i.imgur.com/WMJt012.png" title="source: imgur.com" />
-<img src="https://i.imgur.com/GjJ5CjV.png" title="source: imgur.com" />
+<img src="https://i.imgur.com/Qh2mvf5.png" title="source: imgur.com" />
+<img src="https://i.imgur.com/tpSMLo0.png" title="source: imgur.com" />
+<img src="https://i.imgur.com/DB8PnlK.png" title="source: imgur.com" />
+<img src="https://i.imgur.com/rKDNUOJ.png" title="source: imgur.com" />
+<img src="https://i.imgur.com/F1jQ5ak.png" title="source: imgur.com" />
 
 ## Technologies Used
 - Frontend: HTML, CSS, React, Javascript
