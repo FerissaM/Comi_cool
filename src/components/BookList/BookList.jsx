@@ -16,13 +16,15 @@ function BookList() {
   }
 
   return (
-    <div>
+    <div className="container">
       <h1>Book List</h1>
-      <ul>
+      <ul className="book-list">
         {books.map(book => (
-          <li key={book._id}>
+          <li key={book._id} className="book-item">
           <Link to={`/books/${book._id}`}>
-          {book.title}</Link>
+          {book.imageUrl && <img src={book.imageUrl} alt={book.title} className="book-image" />}
+          <div className="book-title">{book.title}</div>
+          </Link>
           </li>
         ))}
       </ul>

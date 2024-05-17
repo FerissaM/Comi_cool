@@ -16,7 +16,7 @@ const Book = require('./models/book');
             genre: 'Shonen',
             price: 10.99,
             series: { name: 'Fairy Tail', volume: 1 },
-            imageUrl: 'https://imgur.com/aK2FuIz'
+            imageUrl: 'https://i.imgur.com/N0EZ27V.jpg'
         },
         { 
             title: 'Fairy Tail Vol. 2',
@@ -25,7 +25,7 @@ const Book = require('./models/book');
             genre: 'Shonen',
             price: 10.99,
             series: { name: 'Fairy Tail', volume: 2 },
-            imageUrl: 'https://imgur.com/aK2FuIz'
+            imageUrl: 'https://i.imgur.com/NJuYarb.jpg'
         },
         { 
             title: 'Fairy Tail Vol. 3',
@@ -34,7 +34,7 @@ const Book = require('./models/book');
             genre: 'Shonen',
             price: 10.99,
             series: { name: 'Fairy Tail', volume: 3 },
-            imageUrl: 'https://imgur.com/aK2FuIz'
+            imageUrl: 'https://i.imgur.com/xKA9RyE.jpg'
         },
         { 
             title: 'Fairy Tail Vol. 4',
@@ -43,7 +43,7 @@ const Book = require('./models/book');
             genre: 'Shonen',
             price: 10.99,
             series: { name: 'Fairy Tail', volume: 4 },
-            imageUrl: 'https://imgur.com/aK2FuIz'
+            imageUrl: 'https://i.imgur.com/pPA14BX.jpg'
         },
         { 
             title: 'Fairy Tail Vol. 5',
@@ -52,7 +52,7 @@ const Book = require('./models/book');
             genre: 'Shonen',
             price: 10.99,
             series: { name: 'Fairy Tail', volume: 5 },
-            imageUrl: 'https://imgur.com/aK2FuIz'
+            imageUrl: 'https://i.imgur.com/rCOdk3l.jpg'
         },
         { 
             title: 'Fairy Tail Vol. 6',
@@ -61,7 +61,7 @@ const Book = require('./models/book');
             genre: 'Shonen',
             price: 10.99,
             series: { name: 'Fairy Tail', volume: 6 },
-            imageUrl: 'https://imgur.com/aK2FuIz'
+            imageUrl: 'https://i.imgur.com/PSGoqHJ.jpg'
         },
         { 
             title: 'Dragon Ball Vol. 1',
@@ -160,84 +160,76 @@ const Book = require('./models/book');
             series: { name: 'Jujutsu Kaisen', volume: 5 }
         },
         {
-            title: 'One Piece Vol. 200',
+            title: 'One Piece Vol. 20',
             author: 'Eiichiro Oda',
             description: 'Pirate King',
             genre: 'Shonen',
             price: 9.99,
-            series: { name: 'One Piece', volume: 200 }
+            series: { name: 'One Piece', volume: 20 }
         },
         {
-            title: 'One Piece Vol. 201',
+            title: 'One Piece Vol. 21',
             author: 'Eiichiro Oda',
             description: 'Pirate King',
             genre: 'Shonen',
             price: 9.99,
-            series: { name: 'One Piece', volume: 201 }
+            series: { name: 'One Piece', volume: 21 }
         },
         {
-            title: 'One Piece Vol. 202',
+            title: 'One Piece Vol. 22',
             author: 'Eiichiro Oda',
             description: 'Pirate King',
             genre: 'Shonen',
             price: 9.99,
-            series: { name: 'One Piece', volume: 202 }
+            series: { name: 'One Piece', volume: 22 }
         },
         {
-            title: 'One Piece Vol. 203',
+            title: 'One Piece Vol. 23',
             author: 'Eiichiro Oda',
             description: 'Pirate King',
             genre: 'Shonen',
             price: 9.99,
-            series: { name: 'One Piece', volume: 203 }
+            series: { name: 'One Piece', volume: 23 }
         },
         {
-            title: 'One Piece Vol. 204',
+            title: 'One Piece Vol. 24',
             author: 'Eiichiro Oda',
             description: 'Pirate King',
             genre: 'Shonen',
             price: 9.99,
-            series: { name: 'One Piece', volume: 204 }
+            series: { name: 'One Piece', volume: 24 }
         },
         {
-            title: 'One Piece Vol. 205',
+            title: 'One Piece Vol. 25',
             author: 'Eiichiro Oda',
             description: 'Pirate King',
             genre: 'Shonen',
             price: 9.99,
-            series: { name: 'One Piece', volume: 205 }
+            series: { name: 'One Piece', volume: 25 }
         },
         {
-            title: 'One Piece Vol. 206',
+            title: 'One Piece Vol. 26',
             author: 'Eiichiro Oda',
             description: 'Pirate King',
             genre: 'Shonen',
             price: 9.99,
-            series: { name: 'One Piece', volume: 206 }
+            series: { name: 'One Piece', volume: 26 }
         },
         {
-            title: 'One Piece Vol. 207',
+            title: 'One Piece Vol. 27',
             author: 'Eiichiro Oda',
             description: 'Pirate King',
             genre: 'Shonen',
             price: 9.99,
-            series: { name: 'One Piece', volume: 207 }
+            series: { name: 'One Piece', volume: 27 }
         },
         {
-            title: 'One Piece Vol. 208',
+            title: 'One Piece Vol. 28',
             author: 'Eiichiro Oda',
             description: 'Pirate King',
             genre: 'Shonen',
             price: 9.99,
-            series: { name: 'One Piece', volume: 208 }
-        },
-        {
-            title: 'One Piece Vol. 209',
-            author: 'Eiichiro Oda',
-            description: 'Pirate King',
-            genre: 'Shonen',
-            price: 9.99,
-            series: { name: 'One Piece', volume: 209 }
+            series: { name: 'One Piece', volume: 28 }
         },
         {
             title: 'Bleach Vol. 37',
@@ -288,60 +280,13 @@ const Book = require('./models/book');
             series: { name: 'Bleach', volume: 42 }
         },
         {
-            title: 'Bleach Vol. 43',
-            author: 'Tite Kubo',
-            description: 'Shinigami',
-            genre: 'Action',
-            price: 7.99,
-            series: { name: 'Bleach', volume: 43 }
-        },
-        {
-            title: 'Bleach Vol. 44',
-            author: 'Tite Kubo',
-            description: 'Shinigami',
-            genre: 'Action',
-            price: 7.99,
-            series: { name: 'Bleach', volume: 44 }
-        },
-        {
-            title: 'Bleach Vol. 45',
-            author: 'Tite Kubo',
-            description: 'Shinigami',
-            genre: 'Action',
-            price: 7.99,
-            series: { name: 'Bleach', volume: 45 }
-        },
-        {
-            title: 'Bleach Vol. 46',
-            author: 'Tite Kubo',
-            description: 'Shinigami',
-            genre: 'Action',
-            price: 7.99,
-            series: { name: 'Bleach', volume: 46 }
-        },
-        {
-            title: 'Bleach Vol. 47',
-            author: 'Tite Kubo',
-            description: 'Shinigami',
-            genre: 'Action',
-            price: 7.99,
-            series: { name: 'Bleach', volume: 48 }
-        },
-        {
-            title: 'Bleach Vol. 49',
-            author: 'Tite Kubo',
-            description: 'Shinigami',
-            genre: 'Action',
-            price: 7.99,
-            series: { name: 'Bleach', volume: 49 }
-        },
-        {
             title: 'Ao Haru Ride Vol. 1',
             author: 'Sakisaka Io',
             description: 'Futaba simp for Kou',
             genre: 'Shojou',
             price: 9.99,
-            series: { name: 'Ao Haru Ride', volume: 1 }
+            series: { name: 'Ao Haru Ride', volume: 1 },
+            imageUrl: 'https://i.imgur.com/S52HhJw.jpg'
         },
         {
             title: 'Ao Haru Ride Vol. 2',
@@ -349,7 +294,8 @@ const Book = require('./models/book');
             description: 'Futaba simp for Kou',
             genre: 'Shojou',
             price: 9.99,
-            series: { name: 'Ao Haru Ride', volume: 2 }
+            series: { name: 'Ao Haru Ride', volume: 2 },
+            imageUrl: 'https://i.imgur.com/IMO6QJa.jpg'
         },
         {
             title: 'Ao Haru Ride Vol. 3',
@@ -357,7 +303,8 @@ const Book = require('./models/book');
             description: 'Futaba simp for Kou',
             genre: 'Shojou',
             price: 9.99,
-            series: { name: 'Ao Haru Ride', volume: 3 }
+            series: { name: 'Ao Haru Ride', volume: 3 },
+            imageUrl: 'https://i.imgur.com/LXUlHrg.jpg'
         },
         {
             title: 'Ao Haru Ride Vol. 4',
@@ -365,7 +312,8 @@ const Book = require('./models/book');
             description: 'Futaba simp for Kou',
             genre: 'Shojou',
             price: 9.99,
-            series: { name: 'Ao Haru Ride', volume: 4 }
+            series: { name: 'Ao Haru Ride', volume: 4 },
+            imageUrl: 'https://i.imgur.com/3WgTKmV.jpg'
         },
         {
             title: 'Ao Haru Ride Vol. 5',
@@ -373,7 +321,8 @@ const Book = require('./models/book');
             description: 'Futaba simp for Kou',
             genre: 'Shojou',
             price: 9.99,
-            series: { name: 'Ao Haru Ride', volume: 5 }
+            series: { name: 'Ao Haru Ride', volume: 5 },
+            imageUrl: 'https://i.imgur.com/nbjDvbz.jpg'
         },
         {
             title: 'Ao Haru Ride Vol. 6',
@@ -381,7 +330,8 @@ const Book = require('./models/book');
             description: 'Futaba simp for Kou',
             genre: 'Shojou',
             price: 9.99,
-            series: { name: 'Ao Haru Ride', volume: 6 }
+            series: { name: 'Ao Haru Ride', volume: 6 },
+            imageUrl: 'https://i.imgur.com/WwnFKhI.jpg'
         },
         {
             title: 'Ao Haru Ride Vol. 7',
@@ -389,7 +339,8 @@ const Book = require('./models/book');
             description: 'Futaba simp for Kou',
             genre: 'Shojou',
             price: 9.99,
-            series: { name: 'Ao Haru Ride', volume: 7 }
+            series: { name: 'Ao Haru Ride', volume: 7 },
+            imageUrl: 'https://i.imgur.com/ow3G0jl.jpg'
         },
         {
             title: 'Kuroko no Basket Vol. 1',
@@ -464,44 +415,13 @@ const Book = require('./models/book');
             series: { name: 'Kuroko no Basket', volume: 9 }
         },
         {
-            title: 'Kuroko no Basket Vol. 10',
-            author: 'Fujimaki Tadatoshi',
-            description: 'Maboroshii no sixth man',
-            genre: 'Sports',
-            price: 9.99,
-            series: { name: 'Kuroko no Basket', volume: 10 }
-        },
-        {
-            title: 'Kuroko no Basket Vol. 11',
-            author: 'Fujimaki Tadatoshi',
-            description: 'Maboroshii no sixth man',
-            genre: 'Sports',
-            price: 9.99,
-            series: { name: 'Kuroko no Basket', volume: 11 }
-        },
-        {
-            title: 'Kuroko no Basket Vol. 12',
-            author: 'Fujimaki Tadatoshi',
-            description: 'Maboroshii no sixth man',
-            genre: 'Sports',
-            price: 9.99,
-            series: { name: 'Kuroko no Basket', volume: 12 }
-        },
-        {
-            title: 'Kuroko no Basket Vol. 13',
-            author: 'Fujimaki Tadatoshi',
-            description: 'Maboroshii no sixth man',
-            genre: 'Sports',
-            price: 9.99,
-            series: { name: 'Kuroko no Basket', volume: 13 }
-        },
-        {
             title: 'Berserk Vol. 6',
             author: 'Kentaro Miura',
             description: 'If you want to be traumatized, go ahead',
             genre: 'Seinen',
             price: 7.99,
-            series: { name: 'Berserk', volume: 6 }
+            series: { name: 'Berserk', volume: 6 },
+            imageUrl: 'https://i.imgur.com/6CUOCGm.jpg'
         },
         {
             title: 'Berserk Vol. 7',
@@ -509,7 +429,8 @@ const Book = require('./models/book');
             description: 'If you want to be traumatized, go ahead',
             genre: 'Seinen',
             price: 7.99,
-            series: { name: 'Berserk', volume: 7 }
+            series: { name: 'Berserk', volume: 7 },
+            imageUrl: 'https://i.imgur.com/Nc4wQ8U.jpg'
         },
         {
             title: 'Berserk Vol. 8',
@@ -517,7 +438,8 @@ const Book = require('./models/book');
             description: 'If you want to be traumatized, go ahead',
             genre: 'Seinen',
             price: 7.99,
-            series: { name: 'Berserk', volume: 8 }
+            series: { name: 'Berserk', volume: 8 },
+            imageUrl: 'https://i.imgur.com/vEnpW9g.jpg'
         },
         {
             title: 'Berserk Vol. 9',
@@ -525,7 +447,8 @@ const Book = require('./models/book');
             description: 'If you want to be traumatized, go ahead',
             genre: 'Seinen',
             price: 7.99,
-            series: { name: 'Berserk', volume: 9 }
+            series: { name: 'Berserk', volume: 9 },
+            imageUrl: 'https://i.imgur.com/DOSMklk.jpg'
         },
         {
             title: 'Berserk Vol. 10',
@@ -533,7 +456,8 @@ const Book = require('./models/book');
             description: 'If you want to be traumatized, go ahead',
             genre: 'Seinen',
             price: 7.99,
-            series: { name: 'Berserk', volume: 10 }
+            series: { name: 'Berserk', volume: 10 },
+            imageUrl: 'https://i.imgur.com/hAQoKAz.jpg'
         },
         {
             title: 'Berserk Vol. 11',
@@ -541,7 +465,8 @@ const Book = require('./models/book');
             description: 'If you want to be traumatized, go ahead',
             genre: 'Seinen',
             price: 7.99,
-            series: { name: 'Berserk', volume: 11 }
+            series: { name: 'Berserk', volume: 11 },
+            imageUrl: 'https://i.imgur.com/zcQ1AAP.jpg'
         },
         {
             title: 'Berserk Vol. 12',
@@ -549,7 +474,8 @@ const Book = require('./models/book');
             description: 'If you want to be traumatized, go ahead',
             genre: 'Seinen',
             price: 7.99,
-            series: { name: 'Berserk', volume: 12 }
+            series: { name: 'Berserk', volume: 12 },
+            imageUrl: 'https://i.imgur.com/vFWY047.jpg'
         },
         {
             title: 'Omniscient Reader Viewpoint Vol. 1',
@@ -557,7 +483,8 @@ const Book = require('./models/book');
             description: '3 ways to survive in a ruined world',
             genre: 'Action',
             price: 10.99,
-            series: { name: 'Omniscient Reader Viewpoint', volume: 1 }
+            series: { name: 'Omniscient Reader Viewpoint', volume: 1 },
+            imageUrl:'https://i.imgur.com/NCWaYd3.jpg'
         },
         {
             title: 'Omniscient Reader Viewpoint Vol. 2',
@@ -565,7 +492,8 @@ const Book = require('./models/book');
             description: '3 ways to survive in a ruined world',
             genre: 'Action',
             price: 10.99,
-            series: { name: 'Omniscient Reader Viewpoint', volume: 2 }
+            series: { name: 'Omniscient Reader Viewpoint', volume: 2 },
+            imageUrl: 'https://i.imgur.com/fLq15y6.jpg'
         },
         {
             title: 'Omniscient Reader Viewpoint Vol. 3',
@@ -573,47 +501,8 @@ const Book = require('./models/book');
             description: '3 ways to survive in a ruined world',
             genre: 'Action',
             price: 10.99,
-            series: { name: 'Omniscient Reader Viewpoint', volume: 3 }
-        },
-        {
-            title: 'Omniscient Reader Viewpoint Vol. 4',
-            author: 'Sing-shong, Sleepy-e',
-            description: '3 ways to survive in a ruined world',
-            genre: 'Action',
-            price: 10.99,
-            series: { name: 'Omniscient Reader Viewpoint', volume: 4 }
-        },
-        {
-            title: 'Omniscient Reader Viewpoint Vol. 5',
-            author: 'Sing-shong, Sleepy-e',
-            description: '3 ways to survive in a ruined world',
-            genre: 'Action',
-            price: 10.99,
-            series: { name: 'Omniscient Reader Viewpoint', volume: 5 }
-        },
-        {
-            title: 'Omniscient Reader Viewpoint Vol. 6',
-            author: 'Sing-shong, Sleepy-e',
-            description: '3 ways to survive in a ruined world',
-            genre: 'Action',
-            price: 10.99,
-            series: { name: 'Omniscient Reader Viewpoint', volume: 6 }
-        },
-        {
-            title: 'Omniscient Reader Viewpoint Vol. 7',
-            author: 'Sing-shong, Sleepy-e',
-            description: '3 ways to survive in a ruined world',
-            genre: 'Action',
-            price: 10.99,
-            series: { name: 'Omniscient Reader Viewpoint', volume: 7 }
-        },
-        {
-            title: 'Omniscient Reader Viewpoint Vol. 8',
-            author: 'Sing-shong, Sleepy-e',
-            description: '3 ways to survive in a ruined world',
-            genre: 'Action',
-            price: 10.99,
-            series: { name: 'Omniscient Reader Viewpoint', volume: 8 }
+            series: { name: 'Omniscient Reader Viewpoint', volume: 3 },
+            imageUrl: 'https://i.imgur.com/98ZDXpO.jpg'
         },
       ]);
   

@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import { useParams } from 'react-router-dom';
 import * as booksApi from '../../utilities/books-api';
+import './BookDetails.css';
 
 function BookDetails({ handleBuy }) {
     const { id } = useParams();
@@ -29,15 +30,17 @@ function BookDetails({ handleBuy }) {
   }
 
   return (
-    <div>
+    <div className="book-details-container">
+         <img src={book.imageUrl} style={{ width: '200px' }} alt={``}/>
+    <div className="book-details">  
       <h1>{book.title}</h1>
-      <img src={book.imageUrl} style={{ width: '200px' }} alt={``}/>
       <p><strong>Author:</strong> {book.author}</p>
-      <p><strong>Description:</strong> {book.description}</p>
       <p><strong>Genre:</strong> {book.genre}</p>
       <p><strong>Price:</strong> ${book.price.toFixed(2)}</p>
       <p><strong>Series:</strong> {book.series.name} (Volume {book.series.volume})</p>
       <button onClick={handleBuyClick}>Buy</button>
+      <p className="book-description"><strong>Description:</strong> {book.description}</p>
+    </div>
     </div>
   );
 }

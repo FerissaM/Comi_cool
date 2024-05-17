@@ -1,0 +1,55 @@
+/* Container for book details */
+.book-details-container {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Styling for the book image */
+  .book-image {
+    flex: 1 1 200px;
+    max-width: 200px;
+  }
+  
+  /* Styling for the book details section */
+  .book-details {
+    flex: 2 1 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-sizing: border-box;
+  }
+  
+  /* Margin on the top of the description */
+  .book-description {
+    margin-top: 20px;
+  }
+  
+  /* General heading styling */
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  /* General paragraph styling */
+  p {
+    margin: 5px 0;
+  }
+  
+  /* Button styling */
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
