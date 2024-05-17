@@ -66,7 +66,7 @@ const Book = require('./models/book');
         { 
             title: 'Dragon Ball Vol. 1',
             author: 'Toriyama Akira',
-            description: 'Kamehame ha!',
+            description: "Dragon Ball introduces a young monkey-tailed boy named Goku (a wry update of the classic Chinese legend), whose quiet life changes when he meets a girl named Bulma who is on a quest to collect seven  If she gathers them all, an incredibly powerful dragon will appear and grant her one wish. But the precious orbs are scattered all over the world, and Bulma could use the help of a certain super-strong boy... (In Japan, Dragon Ball and Dragon Ball Z were originally a single 42-volume series. VIZ Media's Dragon Ball contains vols. 1-16 of the original Japanese Dragon Ball, from the beginning of the series to the climax of Goku's last fight with Piccolo.)",
             genre: 'Shonen',
             price: 11.99,
             series: { name: 'Dragon Ball', volume: 1 },
@@ -75,7 +75,7 @@ const Book = require('./models/book');
         { 
             title: 'Dragon Ball Vol. 2',
             author: 'Toriyama Akira',
-            description: 'Kamehame ha!',
+            description: "Dragon Ball introduces a young monkey-tailed boy named Goku (a wry update of the classic Chinese Legend), whose quiet life changes when he meets a girl named Bulma who is on a quest to collect seven  If she gathers them all, an incredibly powerful dragon will appear and grant her one wish. But the precious orbs are scattered all over the world, and Bulma could use the help of a certain super-strong boy... (In Japan, Dragon Ball and Dragon Ball Z were originally a single 42-volume series. VIZ Media's Dragon Ball contains vols. 1-16 of the original Japanese Dragon Ball, from the beginning of the series to the climax of Goku's last fight with Piccolo.)",
             genre: 'Shonen',
             price: 11.99,
             series: { name: 'Dragon Ball', volume: 2 },
@@ -84,7 +84,7 @@ const Book = require('./models/book');
         { 
             title: 'Dragon Ball Vol. 3',
             author: 'Toriyama Akira',
-            description: 'Kamehame ha!',
+            description: "With the Dragon Balls gone and Bulma's summer vacation over, Goku goes to the remote house of the Turtle Hermit, Kame-Sen'nin, to be trained in the martial arts. There, the girl-ogling old master promises to teach Goku everything he knows...and prepare him for the Tenka'ichi Budôkai, the great tournament to determine the Strongest Fighter in the World! But Goku's fellow student, the Shaolin monk Kuririn, isn't above cheating to be the best. Can the two of them get along as they undergo the strangest martial arts training ever?",
             genre: 'Shonen',
             price: 11.99,
             series: { name: 'Dragon Ball', volume: 3 },
@@ -93,7 +93,7 @@ const Book = require('./models/book');
         { 
             title: 'Dragon Ball Vol. 4',
             author: 'Toriyama Akira',
-            description: 'Kamehame ha!',
+            description: "Goku has made it to the Tenka'ichi Budôkai, the world's #1 martial arts tournament...but even the training of the martial arts master Kame-Sen'nin hasn't prepared him for this! Only seven finalists remain. Will the champion be Goku? His fellow student Kuririn? Yamcha, master of the? Fighting woman Ran Fuan? Giran, a rubbery monster who's part dinasaur? Namu, an Indian mystic? Or Jackie Chun, the mysterious old man who may be the toughest fighter of all? There can be only one winner in the wildest, craziest battle ever!",
             genre: 'Shonen',
             price: 11.99,
             series: { name: 'Dragon Ball', volume: 4 },
@@ -102,7 +102,7 @@ const Book = require('./models/book');
         { 
             title: 'Dragon Ball Vol. 5',
             author: 'Toriyama Akira',
-            description: 'Kamehame ha!',
+            description: "In the final round of the martial arts competition, it's down to Goku vs. Jackie Chun, the mysterious old man who's as powerful as Kame-Sen'nin himself! Will the audience survive the confrontation? After the smoke clears, Goku jumps on his flying cloud and returns to his quest to find the seven Dragon Balls, but now he's not the only one looking for them. The evil Red Ribbon Army wants the Dragon Balls for themselves, and to stop their plans, Goku must go around the world--and survive the six deadly floors of Colonel White's fortress, Muscle Tower!",
             genre: 'Shonen',
             price: 11.99,
             series: { name: 'Dragon Ball', volume: 5 },
@@ -111,7 +111,7 @@ const Book = require('./models/book');
         { 
             title: 'Dragon Ball Vol. 6',
             author: 'Toriyama Akira',
-            description: 'Kamehame ha!',
+            description: "In the frozen north, Goku's one-man fight against the Red Ribbon Army continues as he storms the perilous Muscle Tower! Can he defeat General White's squad of ninjas, cyborgs, and worse, and save the peaceful people of Jingle Village from their oppressors? Then, Gorku travels to the City of the West to visit his old friend Bulma, who joins him on his quest, bringing her latest inventions. Their quest for the next Dragon Ball takes them around the world to a jungle island in the South Seas...but to get THIS Dragon Ball they'll have to go through General Blue!",
             genre: 'Shonen',
             price: 11.99,
             series: { name: 'Dragon Ball', volume: 6 },
@@ -120,7 +120,7 @@ const Book = require('./models/book');
         { 
             title: 'Dragon Ball Vol. 7',
             author: 'Toriyama Akira',
-            description: 'Kamehame ha!',
+            description: "Only Goku, Bulma and Kuririn stand between the Red Ribbon Army and the seven Dragon Balls which can grant any wish in the world! Using a submarine loaned by Kame-Sen'nin, the heroic trio explores a pirate's undersea cave in search of the next Dragon Ball, but gun-toting bad guys are on their tail! Now they must face not only perilous pirate traps but the sinister General Blue, a martial artist with powers even Goku doesn't have! Can they escape the cave alive? As the battle continues, Goku and General Blue go to Penguin Village, the home of the weird scientist Dr. Slump and one of the strangest places on Earth!",
             genre: 'Shonen',
             price: 11.99,
             series: { name: 'Dragon Ball', volume: 7 },
@@ -370,76 +370,85 @@ const Book = require('./models/book');
             imageUrl: 'https://i.imgur.com/ow3G0jl.jpg'
         },
         {
-            title: 'Kuroko no Basket Vol. 1',
+            title: 'Kuroko no Basket Vol. 1 - 2',
             author: 'Fujimaki Tadatoshi',
             description: 'Maboroshii no sixth man',
             genre: 'Sports',
             price: 9.99,
-            series: { name: 'Kuroko no Basket', volume: 1 }
+            series: { name: 'Kuroko no Basket', volume: 1},
+            imageUrl: 'https://i.imgur.com/6ibcriF.jpg'
         },
         {
-            title: 'Kuroko no Basket Vol. 2',
+            title: 'Kuroko no Basket Vol. 3 - 4 ',
             author: 'Fujimaki Tadatoshi',
             description: 'Maboroshii no sixth man',
             genre: 'Sports',
             price: 9.99,
-            series: { name: 'Kuroko no Basket', volume: 2 }
+            series: { name: 'Kuroko no Basket', volume: 2 },
+            imageUrl: 'https://i.imgur.com/KyStLtJ.jpg'
         },
         {
-            title: 'Kuroko no Basket Vol. 3',
+            title: 'Kuroko no Basket Vol. 5 - 6',
             author: 'Fujimaki Tadatoshi',
             description: 'Maboroshii no sixth man',
             genre: 'Sports',
             price: 9.99,
-            series: { name: 'Kuroko no Basket', volume: 3 }
+            series: { name: 'Kuroko no Basket', volume: 3 },
+            imageUrl: 'https://i.imgur.com/UX3kZXg.jpg'
         },
         {
-            title: 'Kuroko no Basket Vol. 4',
+            title: 'Kuroko no Basket Vol. 7 - 8',
             author: 'Fujimaki Tadatoshi',
             description: 'Maboroshii no sixth man',
             genre: 'Sports',
             price: 9.99,
-            series: { name: 'Kuroko no Basket', volume: 4 }
+            series: { name: 'Kuroko no Basket', volume: 4 },
+            imageUrl: 'https://i.imgur.com/dQIwd1d.jpg'
         },
         {
-            title: 'Kuroko no Basket Vol. 5',
+            title: 'Kuroko no Basket Vol. 9 - 10',
             author: 'Fujimaki Tadatoshi',
             description: 'Maboroshii no sixth man',
             genre: 'Sports',
             price: 9.99,
-            series: { name: 'Kuroko no Basket', volume: 5 }
+            series: { name: 'Kuroko no Basket', volume: 5 },
+            imageUrl: 'https://i.imgur.com/b8Ai9cv.jpg'
         },
         {
-            title: 'Kuroko no Basket Vol. 6',
+            title: 'Kuroko no Basket Vol. 11 - 12',
             author: 'Fujimaki Tadatoshi',
             description: 'Maboroshii no sixth man',
             genre: 'Sports',
             price: 9.99,
-            series: { name: 'Kuroko no Basket', volume: 6 }
+            series: { name: 'Kuroko no Basket', volume: 6 },
+            imageUrl: 'https://i.imgur.com/bby1KEs.jpg'
         },
         {
-            title: 'Kuroko no Basket Vol. 7',
+            title: 'Kuroko no Basket Vol. 13 - 14',
             author: 'Fujimaki Tadatoshi',
             description: 'Maboroshii no sixth man',
             genre: 'Sports',
             price: 9.99,
-            series: { name: 'Kuroko no Basket', volume: 7 }
+            series: { name: 'Kuroko no Basket', volume: 7 },
+            imageUrl: 'https://i.imgur.com/J7T6Ynm.jpg'
         },
         {
-            title: 'Kuroko no Basket Vol. 8',
+            title: 'Kuroko no Basket Vol. 15 - 16',
             author: 'Fujimaki Tadatoshi',
             description: 'Maboroshii no sixth man',
             genre: 'Sports',
             price: 9.99,
-            series: { name: 'Kuroko no Basket', volume: 8 }
+            series: { name: 'Kuroko no Basket', volume: 8 },
+            imageUrl: 'https://i.imgur.com/ew2y7lp.jpg'
         },
         {
-            title: 'Kuroko no Basket Vol. 9',
+            title: 'Kuroko no Basket Vol. 17',
             author: 'Fujimaki Tadatoshi',
             description: 'Maboroshii no sixth man',
             genre: 'Sports',
             price: 9.99,
-            series: { name: 'Kuroko no Basket', volume: 9 }
+            series: { name: 'Kuroko no Basket', volume: 9 },
+            imageUrl: 'https://i.imgur.com/BdsPStL.jpg'
         },
         {
             title: 'Berserk Vol. 6',
@@ -511,12 +520,12 @@ const Book = require('./models/book');
             genre: 'Action',
             price: 10.99,
             series: { name: 'Omniscient Reader Viewpoint', volume: 1 },
-            imageUrl:'https://i.imgur.com/NCWaYd3.jpg'
+            imageUrl: 'https://i.imgur.com/98ZDXpO.jpg'
         },
         {
             title: 'Omniscient Reader Viewpoint Vol. 2',
             author: 'Sing-shong, Sleepy-e',
-            description: '3 ways to survive in a ruined world',
+            description: "THE ENDLESS TRAGEDIES OF THIS WORLD ALL BEGIN WITH THIS CHARACTER. Three Ways to Survive the Apocalypse is Dokja’s favorite novel, or it was...until it became reality. Thanks to his knowledge of the story, he managed to survive the first chaotic moments of the new world. But the relentless scenario waits for no one, and Dokja finds himself in yet another life-or-death struggle. Isolated from his group and surrounded by horrific creatures, his story seems all but doomed to a premature ending...That’s when an unmistakable presence makes an entrance. It’s time for Dokja, the only reader of TWSA, to meet its main character―the Regressor Junghyeok Yu!",
             genre: 'Action',
             price: 10.99,
             series: { name: 'Omniscient Reader Viewpoint', volume: 2 },
@@ -525,11 +534,11 @@ const Book = require('./models/book');
         {
             title: 'Omniscient Reader Viewpoint Vol. 3',
             author: 'Sing-shong, Sleepy-e',
-            description: '3 ways to survive in a ruined world',
+            description: "With all the food destroyed by the goblin, Dokja’s group is forced to venture into the dark tunnels teeming with vicious creatures. But in the cruel new world, monsters are not the most dangerous enemies. When the atrocities committed by the “Major Group” come to light, chaos ensues in Geumho Station. And amidst the bloodshed, Huiwon’s true power awakens...the Time of Judgment is nigh!",
             genre: 'Action',
             price: 10.99,
             series: { name: 'Omniscient Reader Viewpoint', volume: 3 },
-            imageUrl: 'https://i.imgur.com/98ZDXpO.jpg'
+            imageUrl: 'https://i.imgur.com/NCWaYd3.jpg'
         },
       ]);
   

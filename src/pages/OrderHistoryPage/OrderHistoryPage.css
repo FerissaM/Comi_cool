@@ -1,23 +1,35 @@
 .OrderHistoryPage {
-    display: flex;
-    height: 100%;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
   
   .OrderHistoryPage aside {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 20%;
-    padding: 1rem;
+    width: 200px;
+    padding: 20px;
   }
-  
-  .OrderHistoryPage .OrderList {
+
+  .OrderHistoryPage .button {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .OrderHistoryPage main {
+    flex-grow: 1;
+    padding: 20px;
+  }
+
+  .OrderHistoryPage main .OrderList {
     flex: 1;
     overflow-y: auto;
+    margin-bottom: 20px;
   }
   
-  .OrderHistoryPage .OrderDetails {
-    flex: 2;
-    padding: 1rem;
+  .OrderHistoryPage main .OrderDetails {
+    border: 1px solid #ccc;
+    padding: 10px;
   }

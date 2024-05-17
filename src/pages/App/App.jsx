@@ -14,15 +14,6 @@ import * as ordersApi from '../../utilities/orders-api';
 
 export default function App() {
   const [user, setUser] = useState(getUser());
-  // const [setCart] = useState([]);
-
-  // useEffect(()=> {
-  //   async function cart() {
-  //     const cart = await ordersApi.getCart();
-  //     setCart(cart);
-  //   } 
-  //   fetchcart()
-  // }, [])
 
   async function handleBuy(bookId) {
     const updatedCart = await ordersApi.addItem(bookId);
