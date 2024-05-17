@@ -12,7 +12,7 @@ An online bookstore specializing on Japanese comic books! You can now browse and
 
 ## Technologies Used
 
-- Frontend: HTML, CSS, React, Javascript
+- Frontend: HTML, CSS, React
 - Backend: Node.js, Express, Javascript
 - Database: MongoDB
 - Authentication: JWT
