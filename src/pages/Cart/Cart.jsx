@@ -46,7 +46,6 @@ function Cart() {
           handleCheckout={handleCheckout}
         />
       </section>
-      <button className="cart-button" onClick={handleCheckout}>Proceed to Checkout</button>
     </main>
   );
 }
