@@ -28,3 +28,4 @@ An online bookstore specializing on Japanese comic books! You can now browse and
 
 - AAU, I want to be able to filter the books based on genre, author, series, etc.
 - AAU, I want to be able to have a favorites folder so I can keep track of what I want to buy in the future.
+- AAU, I want to be able to review the books I bought.
