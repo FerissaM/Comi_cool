@@ -37,14 +37,16 @@ function Cart() {
   }
 
   return (
-    <main className="Cart">
+    <main className="cart-container">
+      <h1 className="cart-header">Your Cart</h1>
       <section className="order-details">
         <OrderDetails 
           order={order}
           handleChangeQty={handleChangeQty}
           handleCheckout={handleCheckout}
         />
-      </section> 
+      </section>
+      <button className="cart-button" onClick={handleCheckout}>Proceed to Checkout</button>
     </main>
   );
 }

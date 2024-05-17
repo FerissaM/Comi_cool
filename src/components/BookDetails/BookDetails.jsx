@@ -22,7 +22,7 @@ function BookDetails({ handleBuy }) {
 
 
     function handleBuyClick() {
-        handleBuy(id);  // Call handleBuy with the book id
+        handleBuy(id);
     }
     
   if (!book) {
@@ -32,13 +32,13 @@ function BookDetails({ handleBuy }) {
   return (
     <div className="book-details-container">
          <img src={book.imageUrl} style={{ width: '200px' }} alt={``}/>
-    <div className="book-details">  
+    <div className="book-details-text">  
       <h1>{book.title}</h1>
       <p><strong>Author:</strong> {book.author}</p>
       <p><strong>Genre:</strong> {book.genre}</p>
       <p><strong>Price:</strong> ${book.price.toFixed(2)}</p>
       <p><strong>Series:</strong> {book.series.name} (Volume {book.series.volume})</p>
-      <button onClick={handleBuyClick}>Buy</button>
+      <button onClick={handleBuyClick}  className="book-details-button">Buy</button>
       <p className="book-description"><strong>Description:</strong> {book.description}</p>
     </div>
     </div>
